@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.905" x2="0.5" y2="0.095" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0dcfcb"/>
+      <stop offset="0.54" stop-color="#07d8af"/>
+      <stop offset="1" stop-color="#00e193"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.497" y1="0.007" x2="0.497" y2="0.995" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b5f2df"/>
+      <stop offset="0.765" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="naver_tv" transform="translate(-0.333 -0.333)">
+    <circle id="타원_15" data-name="타원 15" cx="14" cy="14" r="14" transform="translate(0.333 0.333)" fill="url(#linear-gradient)"/>
+    <g id="그룹_184" data-name="그룹 184" transform="translate(7.883 5.574)">
+      <path id="패스_415" data-name="패스 415" d="M14.678,22.289a2.466,2.466,0,0,1-2.389,2.469A2.466,2.466,0,0,1,9.9,22.289V9.469A2.466,2.466,0,0,1,12.289,7a2.466,2.466,0,0,1,2.389,2.469Z" transform="translate(-9.9 -7)" fill="url(#linear-gradient-2)"/>
+      <path id="패스_416" data-name="패스 416" d="M13.648,26.014A2.431,2.431,0,1,1,11.1,21.873L21.212,15.5a2.431,2.431,0,1,1,2.548,4.141Z" transform="translate(-9.905 -8.655)" fill="#fff"/>
+      <path id="패스_417" data-name="패스 417" d="M13.648,7.4A2.431,2.431,0,0,0,11.1,11.544l10.113,6.37a2.431,2.431,0,1,0,2.548-4.141Z" transform="translate(-9.905 -7.005)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

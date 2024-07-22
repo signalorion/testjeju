@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_6" data-name="사각형 6" width="8" height="14" transform="translate(-0.204 0.074)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_140" data-name="그룹 140" transform="translate(-801.667 -1995.667)">
+    <circle id="Ellipse_900_copy_4" data-name="Ellipse 900 copy 4" cx="14" cy="14" r="14" transform="translate(801.667 1995.667)" fill="#f7bc0f"/>
+    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(811.87 2003.593)">
+      <g id="그룹_12" data-name="그룹 12">
+        <g id="그룹_11" data-name="그룹 11" clip-path="url(#clip-path)">
+          <path id="패스_12" data-name="패스 12" d="M7.173,0H.419A.42.42,0,0,0,0,.421V7.107a.42.42,0,0,0,.419.421H3.953A7.8,7.8,0,0,1,.844,11.835l2.634,2.591A8.206,8.206,0,0,0,7.584,7.145a.219.219,0,0,0,.008-.037V.421A.42.42,0,0,0,7.173,0" transform="translate(0)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

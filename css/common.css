@@ -1,0 +1,851 @@
+@charset "utf-8";
+
+/*제주도청 클론페이지 공통 스타일시트*/
+
+
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+/* 페이지 기본 설정 */
+body,
+html {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+    word-break: keep-all;
+    min-width: 320px;
+    color: #333;
+    /* overflow-y: hidden; */
+}
+
+button {
+    font-size: inherit; /* 부모 요소의 폰트 크기를 상속받음 */
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+/* 숨김텍스트 */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+/* 스타일 */
+.strong{
+    font-size: 22px;
+}
+
+/* 페이지 기본 설정 끝------------------------------ */
+
+/* 본문 바로가기 링크 */
+.skip-link {
+    
+}
+
+/* 키보드 포커스를 받을 때 보이도록 설정 */
+.skip-link:focus {
+    width: 100%;
+    display: block;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    position: static;
+    height: auto;
+    margin: initial;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+  
+  
+  
+
+/* 완전 콘텐츠 본문 */
+main{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 본문 설정 끝 --------------- */
+
+
+/* 헤더 설정 */
+header{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    }
+
+
+    
+/* 탑메뉴 설정 */
+.topmenu{
+    position: absolute;
+    top: 0px;
+    background-color: #eaeaea;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    line-height: 36px;
+    font-size: 13px;
+    color: #666;
+}
+
+
+
+
+
+
+ .topmenubox {
+    width: 1600px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+
+.topmenu ul{
+    display: flex;
+}
+.dotmenu li{
+    position: relative;
+    padding: 0 12px;
+}
+.dotmenu li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    right: -2px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #9D9D9D;
+}
+
+.dotmenu li a{
+    color: #666;
+}
+.dotmenu li button{
+    color: #666;
+    border: 0;
+    background:none;
+    
+}
+
+
+/* 언어 설정 */
+
+
+.langmenu{
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    z-index: 100;
+    width: 90px;
+    padding: 7px 10px;
+    line-height: 1.42857143;
+}
+
+.langmenu a{
+    display: block;
+    padding: 2px 0;
+    font-size: 13px;
+}
+
+/* 조직도 포함한 탑메뉴 끝-------------------------- */
+
+
+/* 로고설정 */
+.h1box{
+    width: 1600px;
+    height: 100px;
+    top:36px;
+    /* background-color: #333; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+
+h1{
+    position: absolute;
+    left: 0px;
+    top: 33px;
+    
+    /* height: 100%; */
+    
+    z-index: 100;
+}
+h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* 로고설정 끝------------------------------------- */
+
+
+/* 지엔비 시작 */
+
+.headmenubox{
+    width: 1600px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 18%;
+  
+}
+
+.headmenu{
+    display: flex;
+    /* background-color:yellow; */
+    justify-content: space-between;
+    height: 100%;
+}
+.headmenu li{
+    /* padding: 0 50px; */
+}
+
+
+.headmenu li:not(:last-child){
+    width: auto;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headmenu li:last-child{
+    padding: 0;
+    position: relative;
+    width: auto;
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.headmenu li:last-child button{
+    position: absolute;
+    right: 0;
+    width:auto;
+}
+
+.headmenu li button{
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    font-size: 22px;
+    font-weight: 700;
+    border: 0;
+
+} 
+
+
+
+/* 지엔비 버튼 호버 시 나오는 메뉴 */
+#gnbmenu {
+}
+.blackback{
+    display: none; 
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 776;
+}
+
+.gnbmenu{
+    position: relative;
+    top: 0px;
+    left: 0;
+    z-index: 777;
+    width: 100%;
+    border-top: 1px solid #EAEAEA;
+    background-color: white;
+}
+
+.gnbmenubox{
+    width: 1600px;
+    margin: 0 auto;
+    padding:30px 0;
+}
+
+.gnbmenulist{
+    display: flex;
+}
+.gnbmenulist li{
+    margin-right: 50px;
+    width: 230px;
+}
+
+.gnbmenuhead{
+    color: #333;
+    text-align: center;
+    display: block;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.gnbdetail li{
+    position: relative;
+    margin-top: 10px;
+}
+
+.gnbdetail li::before{
+content: "";
+top: 50%;
+
+position: absolute;
+background-color: #707070;
+width: 3px;
+height: 3px;
+border-radius: 50%;
+}
+
+.gnbdetail a {
+    padding-left: 10px;
+    color: #666;
+}
+
+
+/* 지엔비 버튼 호버 시 나오는 메뉴 끝 ***************/
+
+/* 지엔비 끝------------------------------------- */
+
+
+
+/* main 영역 구분 */
+main {
+    width: 1600px;
+    
+}
+
+.mainpoint{
+    display: flex;
+    margin-bottom: 70px;
+
+}
+
+.mainleft{
+    width: 25%;
+    padding-right: 40px;
+}
+
+.maincenter{
+    width: 50%;
+    
+}
+
+.mainright{
+    width: 25%;
+    padding-left: 40px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+.mainmedia{
+    display: flex;
+    
+
+}
+
+
+
+
+/* mainleft */
+
+/* 검색어를 입력하세요 */
+
+
+
+.mainsearchbox{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    
+}
+
+#mainsearch {
+    border: 2px solid #4643D4;
+    border-radius: 45px;
+    width: 100%;
+    height: 50px;
+}
+
+.mainsearchbox button {
+    position: absolute;
+    right: 0px;
+    border: none;
+    background-image: url(../image/search.svg);
+    background-repeat: no-repeat;
+    background-position: center 55%;
+    background-color: #4643D4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.mainsearchbox label {
+    font-size: 16px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    color: #322FBD;
+    transition: top 0.3s ease;
+}
+
+.mainsearchbox input:focus + label {
+    top: -27px; /* 포커스를 받으면 위로 이동 */
+    font-size: 12px; /* 폰트 크기 줄이기 */
+    color: #333; /* 색상 변경 */
+}
+
+
+/* 검색어 영역 끝 -------------------------- */
+
+
+/* 메인 왼쪽 중간 해시태그 */
+.mainhashtag {
+    width: 100%;
+    margin-bottom: 50px;
+    color: #8817D4;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainhashtag ul{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.mainhashtag li{
+    display: inline;
+    border: 1px solid #DABDEE;
+    background-color: #F7EDFE;
+    border-radius: 23px;
+    padding: 6px 22px 7px;
+    text-align: center;
+    
+    
+}
+
+.mainhashtag li:nth-child(3) a {
+    color: black;
+}
+
+.hashpurple{
+    color: #8817D4;
+}
+.hashblue{
+    color: #4840CD;
+}
+
+.mainhashtag li:nth-child(1), .mainhashtag li:nth-child(4){
+    display: block;
+    width: fit-content;
+    margin: 5px;
+}
+
+.mainhashtag li:nth-child(2), .mainhashtag li:nth-child(3){
+    display: inline-block;
+    background: white;
+    margin: 2.5px;
+}
+
+/* 메인 왼쪽 중간 해시태그 ---------------------*/
+
+
+/* 메인 왼쪽 아래 수산물안전정보 */
+.mainleftbottombox {
+    width: 100%;
+    height: auto;
+    background: url(../image/sea.svg) no-repeat;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+
+.mainleftbottombox p{
+    color: #00388D;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.seasafe{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: inline-block;
+    color: white;
+    background-color: #008100;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 메인 왼쪽 끝 ------------------------------ */
+
+/* 메인 센터 */
+.maincenter{
+    position: relative;
+}
+
+.bannercontrol {
+    z-index: 10;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.bannercontrol ul{
+    display: flex;
+    width: 150px;
+    height: auto;
+}
+
+.bannernum {
+    color:#333;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.bannertotalnum{
+    color: #777;
+    margin-right: 3px;
+}
+.bannertotalnum span{
+    margin-right: 3px;
+}
+
+
+.bannercontrol button{
+    border: none;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    /* background-position: center; */
+}
+
+.banleft button{
+    background: url(../image/banner/ban_prev.svg) center no-repeat;
+}
+.banstop button{
+    background: url(../image/banner/ban_pause.svg) center no-repeat;
+}
+.banright button{
+    background: url(../image/banner/ban_next.svg) center no-repeat;
+}
+
+.banviewall button{
+    background: url(../image/banner/view_all.svg) center no-repeat;
+}
+
+.bannerimgs{
+    overflow: hidden;
+}
+
+.bannerimgs ul{
+    display: flex;
+    width: 300%;
+    
+}
+
+.bannerimgs li{
+    width: 100%;
+}
+.bannerimgs li img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+/* 메인 센터 끝 -------------------------- */
+
+
+/* 메인 오른쪽 */
+.mainrightdojisaimg{
+    background: url(../image/dojisa_2.png) no-repeat right bottom;
+}
+
+.mainrightslogan{
+    display: block;
+}
+
+.mainrightslogan > p > span:nth-child(1){
+    color:#4643D4;
+    font-size: 40px;
+    font-weight:900;
+    display: block;
+}
+
+.mainrightslogan > p > span:nth-child(2){
+    color:#981EDE;
+    font-size: 24px;
+    font-weight:900;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+.dojisa{
+    color:#250393;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.dojisaname{
+    font-weight: bold;
+}
+
+
+.varticalbar {
+    width: 30px;
+    height: 2px;
+    background-color: #3807A0;
+    margin-bottom: 20px;
+}
+
+
+.mainrightlink{
+    padding-bottom: 41px;
+    line-height: 30px;
+}
+
+.mainrightlink img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+.mainrightlink > * {
+    color: #555;
+    display: block;
+}
+
+.mainrightlinklist {
+    width: 100%;
+    border-top: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.mainrightlinklist a{
+    color: #666;
+    
+}
+
+.mainrightlinklist > li:nth-child(1){
+    position: relative;
+}
+
+.mainrightlinklist > li:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -28px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+}
+.mainrightlinklist > li:nth-child(2){
+    position: relative;
+}
+
+.mainrightlinklist > li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -28px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+}
+
+/* 메인오른쪽 끝------------------------------------ */
+
+
+/* 메인미디어 */
+.sns{
+    width: 15%;
+    position: relative;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+.jejutv{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.jejutvmore{
+    border: 1px solid #CCCCCC;;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    background: url(../image/plus.svg) no-repeat center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.mainsnslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 0px;
+    
+    
+}
+.mainsnslist li{
+    flex: 1 1 25%; 
+    max-width: 25%; 
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.mainsnslist li img{
+    width: 75%;
+}
+
+
+.youtube{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.youtube div{
+    width: 46%;
+    /* border: 1px solid black; */
+}
+.youtube div a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.busncal{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+}
+.busncal .strong{
+    display: block;
+    font-weight: bold;
+}
+
+.busncal div{
+    height: 50%;
+    border-bottom: 1px dashed #DDDDDD;
+    padding: 15px 10px;
+}
+
+.busncalbus a span{
+    display: block;
+}
+
+.busncalbus img, .busncalcal img{
+    
+}
+
+.busncal a{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.cardnews{
+    width: 25%;
+    position: relative;
+}
+
+.cardnews p{
+    position: absolute;
+    top: -40px;
+}
+
+.cardmore{
+    top:-40px;
+}
+
+
+.cardbox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+
+
+.cardbox a{
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+
+.cardnews1 {
+    background: url(../image/card/thumb-037f887e-b2eb-4532-a211-58e4341f7fdf.png) center/contain no-repeat;
+}
+
+.cardnews2 {
+    background: url(../image/card/thumb-8014b359-0ad5-48c1-89db-3fb0d5ccc8fb.jpg) center/contain no-repeat;
+}

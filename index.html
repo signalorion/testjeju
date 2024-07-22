@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>접근성 코딩 - 제주도청</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/common.css">
+    </head>
+    <body>
+
+        <div id="content">
+            <a href="#mainsearch" class="skip-link visuallyhidden">본문 바로가기</a>
+            <header>
+                <div class="logoandtopmenu">
+                    <div class="h1box">
+                        <h1>
+                            <a href="https://www.jeju.go.kr/index.htm"><img src="./image/logo.svg" alt="">
+                                <span class="visuallyhidden">제주특별자치도</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="topmenu">
+                        <h2 class="visuallyhidden">연관 페이지</h2>
+                        <div class="topmenubox">
+                            <ul class="dotmenu">
+                                <li>
+                                    <a href="#">조직도</a>
+                                </li>
+                                <li>
+                                    <a href="#">제주특별자치도의회</a>
+                                </li>
+                                <li>
+                                    <a href="#">제주시</a>
+                                </li>
+                                <li>
+                                    <a href="#">서귀포시</a>
+                                </li>
+                            </ul>
+                            <h2 class="visuallyhidden">유용한 메뉴</h2>
+                            <ul class="dotmenu">
+                                <li>
+                                    <a href="#">제주날씨</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤알림</a>
+                                </li>
+                                <li>
+                                    <a href="#">비회원 로그인</a>
+                                </li>
+                                <li>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li>
+                                    <button class="langshow" aria-haspopup="true" aria-expanded="false">LANGUAGE</button>
+                                    <div class="langmenu">
+                                        <div role="menu" aria-label="LANGUAGE">
+                                            <div role="none">
+                                                <a href="#" role="menuitem">English</a>
+                                            </div>
+                                            <div role="none">
+                                                <a href="#" role="menuitem">日本語</a>
+                                            </div>
+                                            <div role="none">
+                                                <a href="#" role="menuitem">中文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 언어선택 -->
+                        
+
+                    </div>
+                </div>
+                <div class="headmenubox">
+                    <h2 class="visuallyhidden">주 메뉴</h2>
+                    <ul class="headmenu" id="headmenu">
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu1">도정뉴스</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu2">신문고</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu3">소통/참여/인권</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu4">정보공개</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu5">제주소개</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu6">일자리/기업/청년</button>
+                        </li>
+                        <li>
+                            <button class="menu-btn" data-target="gnbmenu7"><img src="./image/menu.svg" alt="메뉴 전체 보기"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blackback" id="gnbmenu1">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">생생제주</a>
+                                    <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">도정소식</a>
+                                    <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">보도뉴스</a>
+                                    <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">기타소식</a>
+                                    <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">온라인간행물</a>
+                                    <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="blackback" id="gnbmenu2">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">신문고 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="blackback" id="gnbmenu3">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">소통참여인권 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="blackback" id="gnbmenu4">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">정보공개 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+                <div class="blackback" id="gnbmenu5">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">제주소개 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+                <div class="blackback" id="gnbmenu6">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">일자리기업청년 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="blackback" id="gnbmenu7">
+                    <div class="gnbmenu">
+                        <div class="gnbmenubox">
+                            <ul class="gnbmenulist">
+                                <li>
+                                    <a href="#" class="gnbmenuhead">전체 영역</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li>
+                                            <a href="#">영상뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">포토뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">제주정책공감(웹툰)</a>
+                                        </li>
+                    
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">A</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">입법·고시·공고</a></li>
+                                        <li><a href="#">타기관 입법·고시·공고</a></li>
+                                        <li><a href="#">사이버반상회</a></li>
+                                        <li><a href="#">주간업무</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">소셜미디어</a></li>
+                                        <li><a href="#">영상홍보물</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">B</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">해명자료</a></li>
+                                        <li><a href="#">유관기관보도자료</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">C</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">지역소식</a></li>
+                                        <li><a href="#">유관기관소식</a></li>
+                                        <li><a href="#">청렴소식</a></li>
+                                        <li><a href="#">외국인 관련 자료실</a></li>
+                                        
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="gnbmenuhead">D</a>
+                                    <!-- <ul class="gnbdetail">
+                                        <li><a href="#">전자책</a></li>
+                                        <li><a href="#">녹음도서</a></li>
+                                        <li><a href="#">제주자치도보</a></li>
+                                        <li><a href="#">전자관보</a></li>
+                                        <li><a href="#">「제주」 소식지</a></li>
+                                        <li><a href="#">「제주」 소식지 신청·변경·해지</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </header>
+            <!-- 헤더 끝 -->
+            <main>
+                <div class="mainpoint">
+                    <div class="mainleft">
+                        <div class="mainsearchbox">
+                            <input id="mainsearch" type="text">
+                            <label for="mainsearch" id="mainlabel">검색어를 입력하세요</label>
+                            <button>
+                                <span class="visuallyhidden">검색</span></button>
+                        </div>
+                        <div class="mainhashtag">
+                            <ul>
+                                <li>
+                                    <a href="#" class="hashpurple">#제주 돼지고기 판매 인증점</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hashpurple">#한라산</a>
+                                </li>
+                                <li>
+                                    <a href="#">#탐나는전</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hashblue">#고향사랑기부제</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mainleftbottom">
+                            <div class="mainleftbottombox">
+                                <p>수산물 방사능 정보
+                                    <span class="seasafe">안전</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maincenter">
+                        <div class="bannercontainer">
+                            <div class="bannercontrol">
+                                <ul>
+                                    <li class="bannertotalnum">
+                                        <span class="bannernum">1</span><span class="bannerdash">-</span>3
+                                    </li>
+                                    <li class="banleft">
+                                        <button>
+                                            <span class="visuallyhidden">왼쪽</span></button>
+                                    </li>
+                                    <li class="banstop">
+                                        <button>
+                                            <span class="visuallyhidden" id="bannerplay">일시정지</span></button>
+                                    </li>
+                                    <li class="banright">
+                                        <button>
+                                            <span class="visuallyhidden">오른쪽</span></button>
+                                    </li>
+                                    <li class="banviewall">
+                                        <button>
+                                            <span class="visuallyhidden">전체보기</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bannerimgs">
+                                <ul class="bannerimglist">
+                                    <li class="slides"><img
+                                        aria-hidden="false"
+                                        src="./image/banner/banner1.gif"
+                                        alt="의료계 파업 대비 문여는 병·의원 정보 안내 2024.2.23.~ 상황 종료시까지 + 유선문의 120콜센터/복지부콜센터(129)/119구급상황관리센터/ 건강보험공단(1577-1000)/건강보험심사평가원(1644-2000) | 인터넷 문의 응급의료포털(www.e-gen.or.kr)/스마트폰 앱(e-gen) / 보건복지부·도(보건소) 홈페이지/국민건강보험공단/ 건강보험심사평가원 등 |도, 보건소 홈페이지 약국 등 이용 안내 •도내 야간, 휴일 운영 약국 113개소 •도내 안전상비의약품판매업소 930개소"></li>
+                                    <li class="slides"><img
+                                        aria-hidden="false"
+                                        src="./image/banner/banner2.gif"
+                                        alt="제주도 택배 추가배송비 지원사업 신청기간 2024. 7. 1. 09:00~12.20. 신청방법 온라인 신청 및 읍·면·동 주민센터 방문신청 지원금액 추가배송비 실비 지원, 연간 40만원 한도 문의처 제주특별자치도 통상물류과 064-710-4721~4724 신청하기 제주도 추가 배송비 신청하세요! 추가배송비 증빙 시 전액 지원 합니다! 연간 40만원 한도"></li>
+                                    <li class="slides"><img
+                                        aria-hidden="false"
+                                        src="./image/banner/banner3.jpg"
+                                        alt="나도 제주도 제주고향사랑 기부제 탐나는 제주패스 발급 LOVING JEJU GIVING BACK"></li>
+                                </ul>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="mainright">
+                        <div class="mainrightdojisaimg">
+                            <img src="./image/slogan.svg" alt="다함께 미래로 빛나는 제주">
+                            <a href="" class="mainrightslogan">
+                                <p>
+                                    <span>담대한 혁신,</span>
+                                    <span>새로운 성장!</span>
+                                    <span class="dojisa">일하는 도지사<span class="dojisaname">&nbsp;오영훈</span></span></p>
+                            </a>
+
+<div class="varticalbar"></div>
+
+                            <div class="mainrightlink">
+                                <a href="#">
+                                    <span><img src="./image/i_hope.svg" alt="">도지사에게 바란다</span></a>
+                                <a href="#">
+                                    <span><img src="./image/i_pen.svg" alt="">온라인 도민청원실</span></a>
+                            </div>
+                        </div>
+                        <ul class="mainrightlinklist">
+                            <li>
+                                <a href="#">인사말</a>
+                            </li>
+                            <li>
+                                <a href="#">오영훈의 약속(공약)</a>
+                            </li>
+                            <li>
+                                <a href="#">일정</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mainmedia">
+                    <div class="sns">
+                        <p class="jejutv">빛나는<br>제주TV</p>
+                        <button class="jejutvmore">
+                            <span class="visuallyhidden">더보기</span></button>
+                        <ul class="mainsnslist">
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/n_blog.svg" alt="제주도청 네이버 블로그">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/n_post.svg" alt="제주도청 네이버 포스트">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/naver_tv.svg" alt="제주도청 네이버 TV">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/facebook.svg" alt="제주도청 페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/twitter.svg" alt="제주도청 X (구 트위터)">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/story.svg" alt="제주도청 카카오스토리">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/insta.svg" alt="제주도청 인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./image/sns/youtube.svg" alt="제주도청 유튜브">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="youtube">
+                        <div>
+                            <a
+                                href="https://www.youtube.com/watch?v=nzk8lVbwoh0"
+                                target="_blank"
+                                title="[새창] 우리 삼춘들~👨‍🦳👩‍🦳 제주교통복지카드 대상자도 확대되고, 신청도 간편해졌댄 햄수다~ㅣ골아ZOOM"
+                                style="background: url(http://img.youtube.com/vi/nzk8lVbwoh0/hqdefault.jpg) no-repeat center / cover;"></a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.youtube.com/watch?v=7OxHT8TBSfo"
+                                target="_blank"
+                                title="[새창] 민선 8기 2주년 하반기 도정 운영의 핵심은 '에너지·디지털 대전환' ㅣ위클리제주"
+                                style="background: url(http://img.youtube.com/vi/7OxHT8TBSfo/hqdefault.jpg) no-repeat center / cover;"></a>
+                        </div>
+                    </div>
+                    <div class="busncal">
+                        <div class="busncalbus">
+                            <a href="#">
+                                <span class="">안전하고 편리한 제주버스<span class="strong">버스정보시스템</span></span>
+
+                                <img src="./image/i_bus.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="busncalcal">
+                            <a href="#">
+                                <span>제주 문화행사<span class="strong">행사캘린더</span></span>
+
+                                <img src="./image/i_cal.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="cardnews">
+                        <p class="strong">카드뉴스
+                            <span>소식지</span>
+                        </p>
+                        <button class="jejutvmore cardmore">
+                            <span class="visuallyhidden">더보기</span>
+                        </button>
+
+                        <div class="cardbox">
+                                <a href="#" class="cardnews1">
+                                    <span class="visuallyhidden">필수의료 정책 패키지</span>
+                                </a>
+                                
+                                <a href="#" class="cardnews2">
+                                    <span class="visuallyhidden">산사태 국민행동요령</span>
+                                </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </main>
+            </div>
+        
+
+<!-- language 선택 시 -->
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+  var langShowBtn = document.querySelector('.langshow');
+  var langMenu = document.querySelector('.langmenu');
+
+  // 클릭 이벤트 핸들러 추가
+  langShowBtn.addEventListener('click', function() {
+    // 메뉴를 토글하여 보이거나 숨김
+    if (langMenu.style.display === 'block') {
+      langMenu.style.display = 'none';
+      langShowBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      langMenu.style.display = 'block';
+      langShowBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // .langmenu에서 포커스가 나갈 때 숨김 처리
+  langMenu.addEventListener('focusout', function(event) {
+    // 포커스가 .langmenu 내부의 요소에서 외부로 나가면 숨김 처리
+    if (!langMenu.contains(event.relatedTarget)) {
+      langMenu.style.display = 'none';
+    }
+  });
+});
+</script>
+
+<!-- 주 메뉴 호버/키보드 선택했을 때 -->
+<script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var buttons = document.querySelectorAll(".menu-btn");
+            var gnbmenus = document.querySelectorAll(".blackback");
+
+            buttons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var targetId = button.getAttribute("data-target");
+                    // 모든 gnbmenu 숨기기
+                    gnbmenus.forEach(function(menu) {
+                        menu.style.display = "none";
+                    });
+                    // 해당하는 gnbmenu 보이기
+                    document.getElementById(targetId).style.display = "block";
+                });
+            });
+
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "Escape") {
+                    gnbmenus.forEach(function(menu) {
+                        menu.style.display = "none";
+                    });
+                }
+            });
+        });
+</script> 
+
+<!-- 배너 -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.bannerimglist');
+        const slides = document.querySelectorAll('.slides');
+        const bannernum = document.querySelector('.bannernum');
+        const stopButton = document.querySelector('li.banstop button');
+        const bannerplay = document.getElementById('bannerplay');
+        const prev = document.querySelector('li.banleft button');
+        const next = document.querySelector('li.banright button');
+
+        let currentIndex = 0; // 현재 보여지고 있는 슬라이드의 인덱스
+        let intervalId; // setInterval의 ID를 저장하기 위한 변수
+        let isPlaying = true;
+
+        
+
+        function changeSlide() {
+            currentIndex++;
+            if (currentIndex === slides.length) {
+                currentIndex = 0; // 순환(loop) 처리
+            }
+            // 슬라이드 이동 애니메이션
+            slider.style.transition = 'transform 0.5s ease';
+            slider.style.transform = `translateX(-${currentIndex * 100 / slides.length}%)`; // 각 슬라이드 너비의 비율로 이동
+
+            // currentIndex 값을 <span class="bannernum">에 삽입
+            bannernum.textContent = currentIndex + 1;
+        }
+
+
+        function startSlideShow() {
+            intervalId = setInterval(changeSlide, 3000); // 3초마다 슬라이드 변경
+        }
+        
+        function stopSlideShow() {
+            clearInterval(intervalId);
+        }
+
+        startSlideShow();
+
+         // 슬라이드 재생 상태 초기화
+         function resetSlideShow() {
+            stopSlideShow();
+            startSlideShow();
+        }
+
+        stopButton.addEventListener('click', function () {
+            if (isPlaying) {
+                stopSlideShow();
+                stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
+                bannerplay.textContent = '재생' ; 
+            } else {
+                startSlideShow();
+                stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
+                bannerplay.textContent = '일시정지' ; 
+            }
+            isPlaying = !isPlaying; // 슬라이드 재생 상태 토글
+        });
+        
+        prev.addEventListener('click', function () {
+            changeSlide(currentIndex - 1);
+
+            if (currentIndex - 1 === 0) {
+                changeSlide(3);
+            } else if (currentIndex - 1 === 1) {
+                changeSlide(1);
+            } else if (currentIndex - 1 === 2) {
+                changeSlide(2);
+            }
+
+            resetSlideShow();
+        });
+        
+        next.addEventListener('click', function () {
+            
+            changeSlide(currentIndex + 1);
+            resetSlideShow();
+        });
+
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
