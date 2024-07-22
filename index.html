@@ -13,23 +13,24 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./css/common.css">
+        <script src="./js/common.js"></script>
     </head>
     <body>
 
         <div id="content">
-            <a href="#mainsearch" class="skip-link visuallyhidden">본문 바로가기</a>
+            <a href="#mainsection" class="skip-link visuallyhidden">본문 바로가기</a>
             <header>
                 <div class="logoandtopmenu">
                     <div class="h1box">
                         <h1>
-                            <a href="https://www.jeju.go.kr/index.htm"><img src="./image/logo.svg" alt="">
-                                <span class="visuallyhidden">제주특별자치도</span>
+                            <a href="https://www.jeju.go.kr/index.htm"><img src="./image/logo.svg" alt="제주특별자치도">
+                                
                             </a>
                         </h1>
                     </div>
                     <div class="topmenu">
-                        <h2 class="visuallyhidden">연관 페이지</h2>
                         <div class="topmenubox">
+                            <h2 class="visuallyhidden">연관 페이지</h2>
                             <ul class="dotmenu">
                                 <li>
                                     <a href="#">조직도</a>
@@ -44,44 +45,46 @@
                                     <a href="#">서귀포시</a>
                                 </li>
                             </ul>
-                            <h2 class="visuallyhidden">유용한 메뉴</h2>
-                            <ul class="dotmenu">
-                                <li>
-                                    <a href="#">제주날씨</a>
-                                </li>
-                                <li>
-                                    <a href="#">맞춤알림</a>
-                                </li>
-                                <li>
-                                    <a href="#">비회원 로그인</a>
-                                </li>
-                                <li>
-                                    <a href="#">로그인</a>
-                                </li>
-                                <li>
-                                    <button class="langshow" aria-haspopup="true" aria-expanded="false">LANGUAGE</button>
-                                    <div class="langmenu">
-                                        <div role="menu" aria-label="LANGUAGE">
-                                            <div role="none">
-                                                <a href="#" role="menuitem">English</a>
-                                            </div>
-                                            <div role="none">
-                                                <a href="#" role="menuitem">日本語</a>
-                                            </div>
-                                            <div role="none">
-                                                <a href="#" role="menuitem">中文</a>
+                            <div>
+                                <h2 class="visuallyhidden">유용한 메뉴</h2>
+                                <ul class="dotmenu">
+                                    <li>
+                                        <a href="#">제주날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">맞춤알림</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">비회원 로그인</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li>
+                                        <button class="langshow" aria-haspopup="true" aria-expanded="false">LANGUAGE</button>
+                                        <div class="langmenu">
+                                            <div role="menu" aria-label="LANGUAGE">
+                                                <div role="none">
+                                                    <a href="#" role="menuitem">English</a>
+                                                </div>
+                                                <div role="none">
+                                                    <a href="#" role="menuitem">日本語</a>
+                                                </div>
+                                                <div role="none">
+                                                    <a href="#" role="menuitem">中文</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- 언어선택 -->
                         
 
                     </div>
                 </div>
-                <div class="headmenubox">
+                <nav class="headmenubox">
                     <h2 class="visuallyhidden">주 메뉴</h2>
                     <ul class="headmenu" id="headmenu">
                         <li>
@@ -106,7 +109,7 @@
                             <button class="menu-btn" data-target="gnbmenu7"><img src="./image/menu.svg" alt="메뉴 전체 보기"></button>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="blackback" id="gnbmenu1">
                     <div class="gnbmenu">
                         <div class="gnbmenubox">
@@ -610,14 +613,16 @@
             <!-- 헤더 끝 -->
             <main>
                 <div class="mainpoint">
+                    <h2 class="visuallyhidden" id="mainsection">검색 영역</h2>
                     <div class="mainleft">
                         <div class="mainsearchbox">
-                            <input id="mainsearch" type="text">
                             <label for="mainsearch" id="mainlabel">검색어를 입력하세요</label>
+                            <input id="mainsearch" type="text">
                             <button>
                                 <span class="visuallyhidden">검색</span></button>
                         </div>
                         <div class="mainhashtag">
+                            <h3 class="visuallyhidden">추천 검색어</h3>
                             <ul>
                                 <li>
                                     <a href="#" class="hashpurple">#제주 돼지고기 판매 인증점</a>
@@ -635,14 +640,17 @@
                         </div>
                         <div class="mainleftbottom">
                             <div class="mainleftbottombox">
-                                <p>수산물 방사능 정보
-                                    <span class="seasafe">안전</span>
-                                </p>
+                                <a href="#">
+                                    <p>수산물 방사능 정보
+                                        <span class="seasafe"><span class="visuallyhidden">&nbsp; 상태 &nbsp;</span>안전</span>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="maincenter">
                         <div class="bannercontainer">
+                            <h2 class="visuallyhidden">사업 안내</h2>
                             <div class="bannercontrol">
                                 <ul>
                                     <li class="bannertotalnum">
@@ -687,6 +695,7 @@
                         </div>
                     </div>
                     <div class="mainright">
+                        <h2 class="visuallyhidden">도지사 소개</h2>
                         <div class="mainrightdojisaimg">
                             <img src="./image/slogan.svg" alt="다함께 미래로 빛나는 제주">
                             <a href="" class="mainrightslogan">
@@ -720,8 +729,9 @@
                 </div>
 
                 <div class="mainmedia">
+        
                     <div class="sns">
-                        <p class="jejutv">빛나는<br>제주TV</p>
+                        <h2 class="jejutv">빛나는<br>제주TV</h2>
                         <button class="jejutvmore">
                             <span class="visuallyhidden">더보기</span></button>
                         <ul class="mainsnslist">
@@ -784,6 +794,7 @@
                         </div>
                     </div>
                     <div class="busncal">
+                        <h2 class="visuallyhidden">서비스 안내</h2>
                         <div class="busncalbus">
                             <a href="#">
                                 <span class="">안전하고 편리한 제주버스<span class="strong">버스정보시스템</span></span>
@@ -804,11 +815,11 @@
 
                     <div class="cardnews">
                         <p class="strong">카드뉴스
-                            <span>소식지</span>
+                            <a href="#" class="cardnewssosic"><span>소식지</span></a>
                         </p>
-                        <button class="jejutvmore cardmore">
+                        <a href="#" class="jejutvmore cardmore">
                             <span class="visuallyhidden">더보기</span>
-                        </button>
+                        </a>
 
                         <div class="cardbox">
                                 <a href="#" class="cardnews1">
@@ -825,148 +836,6 @@
             </main>
             </div>
         
-
-<!-- language 선택 시 -->
-<script>
-   document.addEventListener('DOMContentLoaded', function() {
-  var langShowBtn = document.querySelector('.langshow');
-  var langMenu = document.querySelector('.langmenu');
-
-  // 클릭 이벤트 핸들러 추가
-  langShowBtn.addEventListener('click', function() {
-    // 메뉴를 토글하여 보이거나 숨김
-    if (langMenu.style.display === 'block') {
-      langMenu.style.display = 'none';
-      langShowBtn.setAttribute('aria-expanded', 'false');
-    } else {
-      langMenu.style.display = 'block';
-      langShowBtn.setAttribute('aria-expanded', 'true');
-    }
-  });
-
-  // .langmenu에서 포커스가 나갈 때 숨김 처리
-  langMenu.addEventListener('focusout', function(event) {
-    // 포커스가 .langmenu 내부의 요소에서 외부로 나가면 숨김 처리
-    if (!langMenu.contains(event.relatedTarget)) {
-      langMenu.style.display = 'none';
-    }
-  });
-});
-</script>
-
-<!-- 주 메뉴 호버/키보드 선택했을 때 -->
-<script>
-            document.addEventListener("DOMContentLoaded", function() {
-            var buttons = document.querySelectorAll(".menu-btn");
-            var gnbmenus = document.querySelectorAll(".blackback");
-
-            buttons.forEach(function(button) {
-                button.addEventListener("click", function() {
-                    var targetId = button.getAttribute("data-target");
-                    // 모든 gnbmenu 숨기기
-                    gnbmenus.forEach(function(menu) {
-                        menu.style.display = "none";
-                    });
-                    // 해당하는 gnbmenu 보이기
-                    document.getElementById(targetId).style.display = "block";
-                });
-            });
-
-            document.addEventListener("keydown", function(event) {
-                if (event.key === "Escape") {
-                    gnbmenus.forEach(function(menu) {
-                        menu.style.display = "none";
-                    });
-                }
-            });
-        });
-</script> 
-
-<!-- 배너 -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.querySelector('.bannerimglist');
-        const slides = document.querySelectorAll('.slides');
-        const bannernum = document.querySelector('.bannernum');
-        const stopButton = document.querySelector('li.banstop button');
-        const bannerplay = document.getElementById('bannerplay');
-        const prev = document.querySelector('li.banleft button');
-        const next = document.querySelector('li.banright button');
-
-        let currentIndex = 0; // 현재 보여지고 있는 슬라이드의 인덱스
-        let intervalId; // setInterval의 ID를 저장하기 위한 변수
-        let isPlaying = true;
-
-        
-
-        function changeSlide() {
-            currentIndex++;
-            if (currentIndex === slides.length) {
-                currentIndex = 0; // 순환(loop) 처리
-            }
-            // 슬라이드 이동 애니메이션
-            slider.style.transition = 'transform 0.5s ease';
-            slider.style.transform = `translateX(-${currentIndex * 100 / slides.length}%)`; // 각 슬라이드 너비의 비율로 이동
-
-            // currentIndex 값을 <span class="bannernum">에 삽입
-            bannernum.textContent = currentIndex + 1;
-        }
-
-
-        function startSlideShow() {
-            intervalId = setInterval(changeSlide, 3000); // 3초마다 슬라이드 변경
-        }
-        
-        function stopSlideShow() {
-            clearInterval(intervalId);
-        }
-
-        startSlideShow();
-
-         // 슬라이드 재생 상태 초기화
-         function resetSlideShow() {
-            stopSlideShow();
-            startSlideShow();
-        }
-
-        stopButton.addEventListener('click', function () {
-            if (isPlaying) {
-                stopSlideShow();
-                stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
-                bannerplay.textContent = '재생' ; 
-            } else {
-                startSlideShow();
-                stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
-                bannerplay.textContent = '일시정지' ; 
-            }
-            isPlaying = !isPlaying; // 슬라이드 재생 상태 토글
-        });
-        
-        prev.addEventListener('click', function () {
-            changeSlide(currentIndex - 1);
-
-            if (currentIndex - 1 === 0) {
-                changeSlide(3);
-            } else if (currentIndex - 1 === 1) {
-                changeSlide(1);
-            } else if (currentIndex - 1 === 2) {
-                changeSlide(2);
-            }
-
-            resetSlideShow();
-        });
-        
-        next.addEventListener('click', function () {
-            
-            changeSlide(currentIndex + 1);
-            resetSlideShow();
-        });
-
-    });
-</script>
-
-
-
 
 
 </body>

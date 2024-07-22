@@ -52,6 +52,7 @@ button {
 /* 스타일 */
 .strong{
     font-size: 22px;
+    font-weight: bold;
 }
 
 /* 페이지 기본 설정 끝------------------------------ */
@@ -272,8 +273,7 @@ h1 a{
 
 
 /* 지엔비 버튼 호버 시 나오는 메뉴 */
-#gnbmenu {
-}
+
 .blackback{
     display: none; 
     position: absolute;
@@ -542,6 +542,8 @@ main {
 }
 
 .bannercontrol ul{
+    padding: 2px;
+    justify-content: center;
     display: flex;
     width: 150px;
     height: auto;
@@ -715,7 +717,7 @@ main {
 
 /* 메인미디어 */
 .sns{
-    width: 15%;
+    /* width: 15%; */
     position: relative;
     padding-right: 30px;
     display: flex;
@@ -760,13 +762,14 @@ main {
 
 
 .youtube{
-    width: 40%;
+    width: 47%;
     display: flex;
     justify-content: space-evenly;
+    padding-right: 30px;
 }
 
 .youtube div{
-    width: 46%;
+    width: 49%;
     /* border: 1px solid black; */
 }
 .youtube div a{
@@ -777,9 +780,10 @@ main {
 
 
 .busncal{
-    width: 17%;
+    width: 20%;
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
 }
 .busncal .strong{
     display: block;
@@ -819,8 +823,20 @@ main {
     top: -40px;
 }
 
+.cardnewssosic::before{
+    margin-right: 10px;
+    display: inline-block;
+    content: "";
+    height: 17px;
+    width: 2px;
+    background-color: #CCCCCC;
+    transform: rotate(35deg);
+}
+
+
 .cardmore{
     top:-40px;
+    right: 0;
 }
 
 
@@ -831,7 +847,12 @@ main {
     justify-content: space-around;
 }
 
-
+.cardnewssosic {
+    padding-left: 10px;
+    font-weight: 400;
+    color: #666666;
+    font-size: 18px;
+}
 
 
 
