@@ -1,5 +1,6 @@
 // common.js
 // 제주특별자치도 페이지의 인터렉션
+// 작성자 신호정
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
+
 ///////////////////////   주 메뉴 호버/키보드 선택했을 때
   var buttons = document.querySelectorAll(".menu-btn");
   var gnbmenus = document.querySelectorAll(".blackback");
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 ///////////////////////////////배너
-const slider = document.querySelector('.bannerimglist');
+        const slider = document.querySelector('.bannerimglist');
         const slides = document.querySelectorAll('.slides');
         const bannernum = document.querySelector('.bannernum');
         const stopButton = document.querySelector('li.banstop button');
@@ -135,6 +136,61 @@ const slider = document.querySelector('.bannerimglist');
             changeSlide(currentIndex + 1);
             resetSlideShow();
         });
+
+
+
+
+////////////라벨 자동으로 올라가기
+const label = document.getElementById('mainlabel');
+const input = document.getElementById('mainsearch');
+
+    // Define the styles for focus and blur
+    const focusStyle = {
+        top: '-27px',
+        fontSize: '12px',
+        color: '#333'
+    };
+
+    const blurStyle = {
+        top: '13px',
+        fontSize: '16px',
+        color: '#322FBD'
+    };
+
+    // Function to apply styles
+    function applyStyle(element, style) {
+        for (let property in style) {
+            if (style.hasOwnProperty(property)) {
+                element.style[property] = style[property];
+            }
+        }
+    }
+
+    // Add event listeners for focus and blur
+    input.addEventListener('focus', function() {
+        applyStyle(label, focusStyle);
+    });
+
+    input.addEventListener('blur', function() {
+        applyStyle(label, blurStyle);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
 

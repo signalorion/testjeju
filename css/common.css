@@ -429,11 +429,6 @@ main {
     transition: top 0.3s ease;
 }
 
-.mainsearchbox input:focus + label {
-    top: -27px; /* 포커스를 받으면 위로 이동 */
-    font-size: 12px; /* 폰트 크기 줄이기 */
-    color: #333; /* 색상 변경 */
-}
 
 
 /* 검색어 영역 끝 -------------------------- */
