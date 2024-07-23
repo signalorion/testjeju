@@ -572,7 +572,10 @@ main {
     background: url(../image/banner/ban_prev.svg) center no-repeat;
 }
 .banstop button{
-    background: url(../image/banner/ban_pause.svg) center no-repeat;
+    background-image: url(../image/banner/ban_pause.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
 }
 .banright button{
     background: url(../image/banner/ban_next.svg) center no-repeat;
