@@ -174,9 +174,8 @@ const input = document.getElementById('mainsearch');
     input.addEventListener('blur', function() {
         applyStyle(label, blurStyle);
     });
-
-
-
+    
+ 
 
 
 
