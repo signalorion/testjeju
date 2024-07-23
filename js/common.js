@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
         stopButton.addEventListener('click', function () {
             if (isPlaying) {
                 stopSlideShow();
-                stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
+                stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
                 bannerplay.textContent = '재생' ; 
             } else {
                 startSlideShow();
-                stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
+                stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
                 bannerplay.textContent = '일시정지' ; 
             }
             isPlaying = !isPlaying; // 슬라이드 재생 상태 토글
