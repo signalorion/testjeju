@@ -35,6 +35,7 @@ html {
 button {
     font-size: inherit; /* 부모 요소의 폰트 크기를 상속받음 */
     font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
   }
   
 /* 숨김텍스트 */
@@ -613,6 +614,7 @@ main {
 }
 
 .mainrightslogan{
+    width: fit-content;
     display: block;
 }
 
@@ -653,6 +655,7 @@ main {
 
 
 .mainrightlink{
+    width: fit-content;
     padding-bottom: 41px;
     line-height: 30px;
 }
