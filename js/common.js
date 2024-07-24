@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-///////////////////////////////배너
+// ///////////////////////////////배너
         const slider = document.querySelector('.bannerimglist');
         const slides = document.querySelectorAll('.slides');
         const bannernum = document.querySelector('.bannernum');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             slider.style.transform = `translateX(-${currentIndex * 100 / slides.length}%)`; // 각 슬라이드 너비의 비율로 이동
 
             // currentIndex 값을 <span class="bannernum">에 삽입
-            bannernum.textContent = currentIndex + 1;
+            bannernum.textContent = currentIndex +1;
         }
 
 
@@ -118,24 +118,61 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         prev.addEventListener('click', function () {
+            
             changeSlide(currentIndex - 1);
 
-            if (currentIndex - 1 === 0) {
-                changeSlide(3);
+            if (currentIndex - 1 ===-1) {
+                changeSlide(2);
+            } else if (currentIndex - 1 === 0) {
+                changeSlide(0);
             } else if (currentIndex - 1 === 1) {
                 changeSlide(1);
-            } else if (currentIndex - 1 === 2) {
-                changeSlide(2);
             }
 
-            resetSlideShow();
+            
+            stopSlideShow();
+            
+            
+
+            if (isPlaying) {
+                stopSlideShow();
+                stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
+                bannerplay.textContent = '재생' ; 
+            } else {
+                startSlideShow();
+                stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
+                bannerplay.textContent = '일시정지' ; 
+            }
         });
         
+
+
+
+
         next.addEventListener('click', function () {
             
             changeSlide(currentIndex + 1);
-            resetSlideShow();
+
+
+        stopSlideShow();
+            
+
+        if (isPlaying) {
+            stopSlideShow();
+            stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
+            bannerplay.textContent = '재생' ; 
+        } else {
+            startSlideShow();
+            stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
+            bannerplay.textContent = '일시정지' ; 
+        }
         });
+
+
+///////////배너 끝
+
+
+
 
 
 
