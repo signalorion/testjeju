@@ -34,28 +34,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 ///////////////////////   주 메뉴 호버/키보드 선택했을 때
-  var buttons = document.querySelectorAll(".menu-btn");
-  var gnbmenus = document.querySelectorAll(".blackback");
-  
-  buttons.forEach(function(button) {
-      button.addEventListener("click", function() {
-          var targetId = button.getAttribute("data-target");
-          // 모든 gnbmenu 숨기기
-          gnbmenus.forEach(function(menu) {
-              menu.style.display = "none";
-          });
-          // 해당하는 gnbmenu 보이기
-          document.getElementById(targetId).style.display = "block";
-      });
-  });
-  
-  document.addEventListener("keydown", function(event) {
-      if (event.key === "Escape") {
-          gnbmenus.forEach(function(menu) {
-              menu.style.display = "none";
-          });
-      }
-  });
+
+var buttons = document.querySelectorAll(".menu-btn");
+var gnbmenus = document.querySelectorAll(".blackback");
+
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var targetId = button.getAttribute("data-target");
+        var targetMenu = document.getElementById(targetId);
+        
+        // 열려 있는 메뉴를 닫는 기능 추가
+        if (targetMenu.style.display === "block") {
+            targetMenu.style.display = "none";
+        } else {
+            // 모든 gnbmenu 숨기기
+            gnbmenus.forEach(function(menu) {
+                menu.style.display = "none";
+            });
+            // 해당하는 gnbmenu 보이기
+            targetMenu.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        gnbmenus.forEach(function(menu) {
+            menu.style.display = "none";
+        });
+    }
+});
+
 
 
 
@@ -107,11 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
         stopButton.addEventListener('click', function () {
             if (isPlaying) {
                 stopSlideShow();
-                stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
+                stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
                 bannerplay.textContent = '재생' ; 
             } else {
                 startSlideShow();
-                stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
+                stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
                 bannerplay.textContent = '일시정지' ; 
             }
             isPlaying = !isPlaying; // 슬라이드 재생 상태 토글
@@ -136,11 +145,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (isPlaying) {
                 stopSlideShow();
-                stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
+                stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
                 bannerplay.textContent = '재생' ; 
             } else {
                 startSlideShow();
-                stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
+                stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
                 bannerplay.textContent = '일시정지' ; 
             }
         });
@@ -159,11 +168,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isPlaying) {
             stopSlideShow();
-            stopButton.style.backgroundImage = "url('././image/banner/ban_play.svg')";
+            stopButton.style.backgroundImage = "url('../image/banner/ban_play.svg')";
             bannerplay.textContent = '재생' ; 
         } else {
             startSlideShow();
-            stopButton.style.backgroundImage = "url('././image/banner/ban_pause.svg')";
+            stopButton.style.backgroundImage = "url('../image/banner/ban_pause.svg')";
             bannerplay.textContent = '일시정지' ; 
         }
         });
