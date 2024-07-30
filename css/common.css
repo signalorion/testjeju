@@ -546,6 +546,14 @@ main {
     height: auto;
 }
 
+.bannercontrol li{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 .bannernum {
     color:#333;
     font-weight: bold;
